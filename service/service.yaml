@@ -1,7 +1,8 @@
 apiVersion: example.com/v1
 kind: Service
 metadata:
-  name: my-service
+  name: my-service  # This should match the expected name format
+  namespace: hello  # Ensure the correct namespace is specified
 spec:
   OrgName: "cloudtech"
   TeamName: "spartans"
