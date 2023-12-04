@@ -1,8 +1,7 @@
 apiVersion: example.com/v1
-kind: Service
+kind: Servicee
 metadata:
-  name: my-service  # This should match the expected name format
-  namespace: hello  # Ensure the correct namespace is specified
+  name: my-servicee
 spec:
   OrgName: "cloudtech"
   TeamName: "spartans"
