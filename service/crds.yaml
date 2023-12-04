@@ -1,13 +1,13 @@
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
-  name: service.example.com
+  name: servicee.example.com
 spec:
   group: example.com
   names:
-    kind: Service
-    plural: services
-    singular: service
+    kind: Servicee
+    plural: servicees
+    singular: servicee
   scope: Namespaced
   versions:
   - name: v1
