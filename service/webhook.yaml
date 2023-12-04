@@ -22,10 +22,10 @@ spec:
       volumes:
       - name: hooks
         configMap:
-          name: service-controller
+          name: servicee-controller
 ---
 apiVersion: v1
-kind: Servicee
+kind: Service
 metadata:
   name: servicee-controller
 spec:
