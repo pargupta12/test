@@ -15,4 +15,4 @@ spec:
   hooks:
     sync:
       webhook:
-        url: http://servicee-controller.servicee/sync
+        url: http://servicee-controller.hello/sync
