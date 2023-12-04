@@ -6,4 +6,4 @@ spec:
   OrgName: "cloudtech"
   TeamName: "spartans"
   ServiceName: "klam-next"
-  EnvironmentName: "prod"
+  EnvironmentName: "prod1"
