@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: service-controller
+  name: servicee-controller
 data:
   sync.py: |
     from http.server import BaseHTTPRequestHandler, HTTPServer
