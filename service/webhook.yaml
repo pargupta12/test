@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: service-controller
+  name: servicee-controller
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: service-controller
+      app: servicee-controller
   template:
     metadata:
       labels:
-        app: service-controller
+        app: servicee-controller
     spec:
       containers:
       - name: controller
@@ -25,11 +25,11 @@ spec:
           name: service-controller
 ---
 apiVersion: v1
-kind: Service
+kind: Servicee
 metadata:
-  name: service-controller
+  name: servicee-controller
 spec:
   selector:
-    app: service-controller
+    app: servicee-controller
   ports:
   - port: 80
