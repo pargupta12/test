@@ -1,0 +1,9 @@
+apiVersion: example.com/v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  OrgName: "cloudtech"
+  TeamName: "spartans"
+  ServiceName: "klam-next"
+  EnvironmentName: "prod"
