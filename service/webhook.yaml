@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-controller
+  template:
+    metadata:
+      labels:
+        app: service-controller
+    spec:
+      containers:
+      - name: controller
+        image: python:3
+        command: ["python3", "/hooks/sync.py"]
+        volumeMounts:
+        - name: hooks
+          mountPath: /hooks
+      volumes:
+      - name: hooks
+        configMap:
+          name: service-controller
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-controller
+spec:
+  selector:
+    app: service-controller
+  ports:
+  - port: 80
